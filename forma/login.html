@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prijava i registracija</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="container">
+        <div class="form-card" id='card'>
+          <div class="login-form">
+            <form>
+              <h1>Prijava</h1>
+              <label for="">Korisničko ime</label><br>
+              <input type="text" name="" placeholder="Korisničko ime" required><br>
+              <label for="">Lozinka</label><br>
+              <input type="text" name="" placeholder="Lozinka" required><br>
+              <a href="#">Zaboravljena lozinka?</a><br>
+              <input type="checkbox"><span>Zapamti</span><br>
+              <button type="button" name="button">Prijava</button>
+            </form>
+              <p>Nemate račun? <a onclick="openRegistration()">Registrirajte se!</a></p>
+          </div>
+
+          <div class="registration-form">
+            <form>
+              <h1>Registracija</h1>
+              <label for="">Korisničko ime</label><br>
+              <input type="text" name="" placeholder="Korisničko ime" required><br>
+              <label for="">Lozinka</label><br>
+              <input type="text" name="" placeholder="Lozinka" required><br>
+              <label for="">Ponovite lozinku</label><br>
+              <input type="text" name="" placeholder="Ponovite lozinku" required><br>
+              <button type="button" name="button">Registracija</button>
+            </form>
+            <a onclick="openLogin()">Imam račun.</a>
+          </div>
+        </div>
+      </div>
+  <script type="text/javascript">
+    var card = document.getElementById('card');
+    function openRegistration(){
+      card.style.transform = 'rotateY(-180deg)';
+    }
+    function openLogin(){
+      card.style.transform = 'rotateY(0deg)';
+    }
+  </script>
+
+  </body>
+</html>
