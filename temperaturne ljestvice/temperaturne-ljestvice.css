@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  border: solid green 2px;
+  border-radius: 20px;
+  padding: 1%;
+  width: 11%;
+  margin-left: 40%;
+  margin-top: 10%;;
+}
+
+input {
+  margin-top: 5%;
+}
